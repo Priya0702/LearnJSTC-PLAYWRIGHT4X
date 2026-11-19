@@ -1,0 +1,12 @@
+class Credentials{
+    #apiKey;
+
+    constructor(user, key){
+        this.user = user;
+    }
+    getAPI(){
+        return this.#apiKey;
+    }
+}
+let cred = new Credentials("admin", "#scret_key_1234");
+console.log(cred.user);
